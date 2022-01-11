@@ -322,13 +322,16 @@ ul {
    display: flex;
 }
 .clients-icons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    border: 1px solid var(--clients-picture-border);
    border-radius: 4px;
    width: 170px;
    height: 92px;
    padding: 16px 32px;
 }
-.clients-icons:not(:last-child) {
+.client:not(:last-child) {
    margin-right: 30px;
 }
 .client-icon {
