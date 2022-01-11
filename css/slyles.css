@@ -291,22 +291,25 @@ ul {
 .social {
    display: flex;
    justify-content: center;
+   align-items: center;
 }
 .social-link {
-   display: block;
+   display: flex;
    justify-content: center;
    align-items: center;
-   background-color: var(--current-color);
-   border-radius: 50%;
    width: 44px;
    height: 44px;
-   margin-right: 10px;
+   background-color: var(--white-colour);
+   border-radius: 50%;
 }
 .social-svg {
-   width: 20px;
-   height: 20px;
    fill: var(--clients-picture-border);
 }
+.social-link:focus,
+.social-link:hover {
+   background-color: var(--current-color);
+}
+
 .social-link:focus .social-svg,
 .social-link:hover .social-svg {
    fill: var(--white-colour);
@@ -317,16 +320,30 @@ ul {
 }
 .clients {
    display: flex;
-   justify-content: space-between;
 }
-.clients-picture {
+.clients-icons {
+   display: block;
    border: 1px solid var(--clients-picture-border);
-   box-sizing: border-box;
    border-radius: 4px;
-   width: 172px;
+   width: 170px;
+   height: 92px;
    padding: 16px 32px;
 }
-
+.clients-icons:not(:last-child) {
+   margin-right: 30px;
+}
+.client-icon {
+   fill: var(--clients-picture-border);
+}
+.clients-icons:focus,
+.clients-icons:hover {
+   cursor: pointer;
+   border: 1px solid var(--current-color);
+}
+.clients-icons:focus .client-icon,
+.clients-icons:hover .client-icon {
+   fill: var(--current-color);
+}
 /* Portfolio STYLES */
 .btn-list {
    display: flex;
@@ -472,4 +489,29 @@ footer {
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--white-colour);
+}
+.footer-social-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 44px;
+   height: 44px;
+   background-color: #ffffff1a;
+   border-radius: 50%;
+}
+.footer-social-svg {
+   fill: var(--white-colour);
+}
+.footer-social-link:focus,
+.footer-social-link:hover {
+   background-color: var(--current-color);
+}
+
+.footer-social-link:focus .footer-social-svg,
+.footer-social-link:hover .footer-social-svg {
+   fill: var(--white-colour);
+   background-color: var(--current-color);
+}
+.footer-social-link:not(:last-child) {
+   margin-right: 10px;
 }
