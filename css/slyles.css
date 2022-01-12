@@ -102,7 +102,7 @@ ul {
    padding: 32px 0;
 }
 .nav-link:focus,
-.nav-link :hover {
+.nav-link:hover {
    color: var(--current-color);
 }
 
@@ -322,6 +322,9 @@ ul {
    background-color: var(--white-colour);
    border-radius: 50%;
 }
+.social-list:not(:last-child) {
+   margin-right: 10px;
+}
 .social-icon {
    fill: var(--clients-picture-border);
 }
@@ -534,6 +537,6 @@ footer {
    fill: var(--white-colour);
    background-color: var(--current-color);
 }
-.footer-social-link:not(:last-child) {
+.join:not(:last-child).footer-social {
    margin-right: 10px;
 }
